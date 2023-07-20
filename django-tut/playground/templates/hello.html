@@ -1,0 +1,9 @@
+{% if user.is_authenticated%}
+<h1> {{user.email}} </h1>
+<a class="btn btn-primary" href="logout" role="button">Log out </a>
+{%else%}
+<h2> No login </h2>
+<a class="btn btn-primary" href="login" role="button">Log In </a>
+{% endif %}
+
+{% comment %} <input class="btn btn-primary" type="button" value="Input"> {% endcomment %}
